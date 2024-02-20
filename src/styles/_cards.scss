@@ -1,12 +1,22 @@
 .Cards {
     padding-top: 24px;
     &__title {
-        padding: 24px 550px;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
     }
     &__row {
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media (max-width: 667px) {
+            display: block;
+        }
+
+        @media (max-width: 1024px) {
+            display: block;
+        }
 
         &__card {
             border-radius: 5px;
@@ -14,47 +24,31 @@
             padding: 20px;
             margin: 20px;
             width: 600px;
+            height: 500px;
             transition: all 0.3s ease-out;
             border-left: 3px solid rgb(255, 166, 0);
+
+            @media (max-width: 667px) {
+                width: 330px;
+                height: 550px;
+            }
+
+            @media (min-width: 668px) and (max-width: 1024px) {
+                width: 700px;
+                height: 450px;
+                font-size: 22px;
+            }
+
+            &__image {
+                max-width: 250px;
+                width: 100%;
+                padding-top: 18px;
+            }
 
             &:hover {
                 transform: translateY(5px);
                 font-size: 16px;
                 }
-
-            &__image {
-                float: center;
-                max-width: 400px;
-            }
         }
     }
-}
-
-
-
-
-.row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-.card {
-    border-radius: 5px;
-    box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
-    padding: 20px;
-    margin: 20px;
-    width: 600px;
-    transition: all 0.3s ease-out;
-    border-left: 3px solid rgb(255, 166, 0);
-}
-
-.card:hover {
-    transform: translateY(5px);
-    font-size: 16px;
-}
-
-.image {
-    float: center;
-    max-width: 400px;
 }

@@ -1,7 +1,6 @@
 @use 'header';
 @use 'Sinopse';
 @use 'cards';
-@use 'watch';
 
 @font-face {
     font-family: Avenir;
@@ -29,25 +28,17 @@
     list-style: none;
 }
 
-body {
-    background-color: rgba(0, 0, 0, 0.74);
-}
+
 
 .Container {
-    max-width: 1260px;
+    // max-width: 1260px;
     margin: 0 auto;
     
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.897);
 
     &__sub-title {
         padding-left: 550px;
         font-family: Busorama, bold;
-    }
-
-    img {
-        max-width: 350px;
-        width: 100%;
-        padding-top: 24px;
     }
 }
 
