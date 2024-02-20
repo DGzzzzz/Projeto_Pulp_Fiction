@@ -37,7 +37,7 @@ body {
     max-width: 1260px;
     margin: 0 auto;
     
-    background-color: silver;
+    background-color: white;
 
     &__sub-title {
         padding-left: 550px;
@@ -66,9 +66,20 @@ body {
 }
 
 .sub-title {
-    font-family: Busorama, bold;
+    @include title;
+    color: rgb(255, 166, 0);
+    text-shadow: 0px 5px 5px black;
+    font-size: 32px;
 }
 
-.Sinopse__text{
+.sub-title-small {
+    @include title;
+    color: rgb(255, 166, 0);
+    text-shadow: 0px 5px 5px black;
+    font-size: 24px;
+    padding-bottom: 12px;
+}
+
+.text {
     @include text;
 }

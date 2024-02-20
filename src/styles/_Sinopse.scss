@@ -1,6 +1,9 @@
 .Sinopse {
+    &__img {
+        padding-left: 20px;
+    }
     display: flex;
-    &__sub-title {
+    &__title {
         padding: 24px 24px 0;
         margin: 0 auto;
     }

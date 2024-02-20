@@ -1,14 +1,16 @@
 .watch {
     padding-top: 24px;
     &__title {
-        padding: 24px 550px;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
     }
 
     &__img {
         display: flex;
         margin: 0 auto;
         justify-content: center;
-        padding-bottom: 22px;
+        padding: 22px 22px;
         
         &__item {
             max-width: 80px;
