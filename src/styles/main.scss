@@ -1,5 +1,74 @@
-$bgcolor: rgb(170, 158, 158);
+@use 'header';
+@use 'Sinopse';
+@use 'cards';
+@use 'watch';
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Busorama;
+    src: url(../../assets/fonts/Busorama.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Aachen;
+    src: url(../../assets/fonts/Aachen.ttf);
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Avenir, sans-serif;
+    list-style: none;
+}
 
 body {
-    background-color: $bgcolor;
+    background-color: rgba(0, 0, 0, 0.74);
+}
+
+.Container {
+    max-width: 1260px;
+    margin: 0 auto;
+    
+    background-color: silver;
+
+    &__sub-title {
+        padding-left: 550px;
+        font-family: Busorama, bold;
+    }
+
+    img {
+        max-width: 350px;
+        width: 100%;
+        padding-top: 24px;
+    }
+}
+
+@mixin title($fontSize: 40px) {
+    font-family: Aachen, bold;
+}
+
+@mixin text($fontSize: 20px) {
+    font-family: Avenir;
+}
+
+.title {
+    @include title;
+    color: rgb(255, 166, 0);
+    text-shadow: 0px 5px 5px red;
+}
+
+.sub-title {
+    font-family: Busorama, bold;
+}
+
+.Sinopse__text{
+    @include text;
 }
