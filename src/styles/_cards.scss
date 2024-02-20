@@ -40,9 +40,14 @@
             }
 
             &__image {
-                max-width: 250px;
+                max-width: 380px;
                 width: 100%;
                 padding-top: 18px;
+
+                @media (min-width: 668px) and (max-width: 1024px) {
+                    max-width: 300px;
+                    width: 100%;
+                }
             }
 
             &:hover {
